@@ -5,3 +5,6 @@ __pycache__/
 mlruns/
 mlflow.db
 .joblib
+*.pt
+*.pth
+*.ckpt
