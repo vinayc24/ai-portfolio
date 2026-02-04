@@ -12,3 +12,9 @@ mlflow.db
 *.pyo
 .DS_Store
 Thumbs.db
+# ML artifacts
+*.joblib
+
+
+# Large datasets
+*.csv
