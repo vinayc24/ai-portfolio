@@ -8,3 +8,7 @@ mlflow.db
 *.pt
 *.pth
 *.ckpt
+.cache/
+*.pyo
+.DS_Store
+Thumbs.db
