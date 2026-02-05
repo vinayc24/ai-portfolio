@@ -70,3 +70,31 @@ The model’s errors were **semantically reasonable**, indicating meaningful lea
 ---
 
 ## Project Structure
+p2_deeplearning/
+├── config.py # Training configuration
+├── dataset.py # Dataset loading and tokenization
+├── model.py # Model definition and freezing logic
+├── train.py # Training loop
+├── evaluate.py # Evaluation and confusion matrix
+└── README.md
+
+
+
+---
+
+## Technologies Used
+- Python
+- PyTorch
+- Hugging Face Transformers
+- Hugging Face Datasets
+- Scikit-learn
+- Matplotlib / Seaborn
+
+---
+
+## Key Learnings
+- Practical transfer learning with transformers
+- CPU-aware deep learning training
+- Model comparison and selection
+- Confusion-matrix–driven error analysis
+- Clean and reproducible ML project structuring
