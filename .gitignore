@@ -18,3 +18,35 @@ Thumbs.db
 
 # Large datasets
 *.csv
+
+# =========================
+# Project 3 — GenAI (RAG)
+# =========================
+
+# FAISS vector store (generated artifacts)
+p3_genai/faiss_index/
+p3_genai/*.faiss
+p3_genai/*.pkl
+
+# Hugging Face & sentence-transformers cache
+.cache/
+huggingface/
+**/.cache/
+
+# Downloaded model weights (LLMs / embeddings)
+*.bin
+*.safetensors
+*.pt
+
+# Tokenizers & model artifacts
+tokenizer.json
+tokenizer_config.json
+special_tokens_map.json
+spiece.model
+
+# Environment variables / secrets
+.env
+
+# Logs (if you add logging later)
+*.log
+logs/
