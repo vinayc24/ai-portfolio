@@ -1,0 +1,11 @@
+Large Language Models (LLMs) are neural networks trained on massive amounts of text data.
+They are capable of understanding, generating, and reasoning over natural language.
+
+Retrieval-Augmented Generation (RAG) improves LLM responses by grounding them in external documents.
+Instead of relying only on parametric memory, RAG retrieves relevant context before generating an answer.
+
+Vector databases store embeddings and allow similarity-based search.
+FAISS is a popular library for efficient vector similarity search on CPU.
+
+Transformer models use self-attention mechanisms to capture long-range dependencies in text.
+DistilBERT is a smaller, faster version of BERT optimized for efficiency.
