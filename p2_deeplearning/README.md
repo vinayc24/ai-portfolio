@@ -98,3 +98,14 @@ p2_deeplearning/
 - Model comparison and selection
 - Confusion-matrix–driven error analysis
 - Clean and reproducible ML project structuring
+
+
+🚀 How to Run
+Prepare dataset
+python dataset.py
+
+Train model
+python train.py
+
+Evaluate model
+python evaluate.py
