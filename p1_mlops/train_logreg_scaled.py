@@ -1,3 +1,12 @@
+"""
+Docstring for p1_mlops.train_logreg_scaled
+    Improves the baseline model by:
+        -Adding feature standardization
+        -Using sklearn Pipelines to avoid data leakage
+
+"""
+
+
 import mlflow
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
@@ -8,12 +17,15 @@ from data_loader import load_data, time_split
 from features import build_features
 from config import DATA_PATH
 
+#load data
 df = load_data(DATA_PATH)
 train_df, val_df = time_split(df)
 
+#Build features
 x_train, y_train = build_features(train_df)
 x_val, y_val = build_features(val_df)
 
+#Pipeline enures scaler is fit ONLY on training data
 pipeline = Pipeline([
     ("scaler", StandardScaler()),
     ("model", LogisticRegression(max_iter=1000))

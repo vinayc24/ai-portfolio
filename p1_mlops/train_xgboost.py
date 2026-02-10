@@ -1,3 +1,13 @@
+"""
+Docstring for p1_mlops.train_xgboost
+    Trains an XGBoost model for improved performance.
+
+    Highlights:
+        -Handles non linear feature interactions
+        -Optimized for imbalances classification
+        -Saves trained model for deployment
+"""
+
 import mlflow
 import xgboost as xgb
 from sklearn.metrics import roc_auc_score, precision_recall_curve, auc
@@ -7,12 +17,16 @@ from features import build_features
 from config import DATA_PATH
 import joblib
 
+#Load Data
 df = load_data(DATA_PATH)
 train_df, val_df = time_split(df)
 
+#Build Features
 x_train, y_train = build_features(train_df)
 x_val, y_val = build_features(val_df)
 
+
+#Initialize XGBoost Classifier
 model = xgb.XGBClassifier(
     n_estimators =200,
     max_depth =5,
